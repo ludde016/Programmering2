@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Uppgift3 {
 	
-	static Object[] array = new Object[100];
+	static Person[] array = new Person[100];
 	
 	public static void main(String[] args) {
 		
@@ -18,6 +18,11 @@ public class Uppgift3 {
 		
 		
 		return array;
+	}
+	
+	class Person {
+		String name;
+		int age;
 	}
 
 }
