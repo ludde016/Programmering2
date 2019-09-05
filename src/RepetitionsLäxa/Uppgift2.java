@@ -8,7 +8,7 @@ public class Uppgift2 {
 
 	public static void main(String[] args) {
 		String ordet = input.nextLine();
-		System.out.print(ord(ordet));
+		baklanges(ord(ordet));
 		
 	}
 	
@@ -19,11 +19,12 @@ public class Uppgift2 {
 		return array;
 	}
 	
-	public static void baklänges(char[] array) {
+	public static void baklanges(char[] array) {
 		String ny = "";
-		for (int i = array.length - 1; i > 0; i--) {
+		for (int i = array.length -1; i >= 0; i--) {
 			ny = ny + array[i];
 		}
-		System.out.println(ny);
+		System.out.print(ny);
+		
 	}
 }
