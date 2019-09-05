@@ -13,7 +13,7 @@ public class Uppgift3 {
 	}
 	
 	public static void ObjectArray(Object in) {
-		
+		m
 	}
 
 }
