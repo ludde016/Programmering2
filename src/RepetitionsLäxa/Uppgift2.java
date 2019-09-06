@@ -7,12 +7,13 @@ public class Uppgift2 {
 	static 	Scanner input = new Scanner(System.in);
 
 	public static void main(String[] args) {
+		while(true) {
 		String ordet = input.nextLine();
 		baklanges(ord(ordet));
-		
+		}
 	}
 	
-	public static char[] ord(String ordet) {
+	public static <T> char[] ord(String ordet) { //En generisk metod som endast använder Char[]...
 		
 		char[] array = ordet.toCharArray();
 		
@@ -24,7 +25,7 @@ public class Uppgift2 {
 		for (int i = array.length -1; i >= 0; i--) {
 			ny = ny + array[i];
 		}
-		System.out.print(ny);
+		System.out.println(ny);
 		
 	}
 }

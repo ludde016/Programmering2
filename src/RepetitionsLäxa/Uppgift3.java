@@ -1,28 +1,31 @@
 package RepetitionsLäxa;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Uppgift3 {
-	
-	static Person[] array = new Person[100];
-	
+
+	static ArrayList<String> List = new ArrayList<String>();
+
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);
-		Object in = input.next();
-		ObjectArray(in);
+		while (true) {
+			String name = input.nextLine();
+				if (name.equals("")) {
+				break;
+			}
+			Array(name);
+		}
 		
+		System.out.println(List);
+
 	}
-	
-	public static Object[] ObjectArray(Object in) {
-		
-		
-		return array;
-	}
-	
-	class Person {
-		String name;
-		int age;
+
+	public static <T> ArrayList<String> Array(String name) {
+		List.add(name);
+
+		return List;
 	}
 
 }
