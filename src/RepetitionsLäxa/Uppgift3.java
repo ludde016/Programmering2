@@ -22,7 +22,7 @@ public class Uppgift3 {
 
 	}
 
-	public static <T> ArrayList<Object> Array(Object x) { //Gör så att den kan ta in olika objekt
+	public static <T> ArrayList<Object> Array(Object x) { 
 		List.add(x);
 
 		return List;
