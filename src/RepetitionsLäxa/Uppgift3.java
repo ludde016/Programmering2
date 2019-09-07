@@ -12,7 +12,7 @@ public class Uppgift3 {
 		Scanner input = new Scanner(System.in);
 		while (true) {
 			Object x = input.next();
-				if (x ==(null)) {
+				if (x.equals("exit")) {
 				break;
 			}
 			Array(x);
