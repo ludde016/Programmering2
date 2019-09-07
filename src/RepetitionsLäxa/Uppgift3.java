@@ -5,25 +5,25 @@ import java.util.Scanner;
 
 public class Uppgift3 {
 
-	static ArrayList<String> List = new ArrayList<String>();
+	static ArrayList<Object> List = new ArrayList<Object>();
 
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);
 		while (true) {
-			String name = input.nextLine();
-				if (name.equals("")) {
+			Object x = input.next();
+				if (x ==(null)) {
 				break;
 			}
-			Array(name);
+			Array(x);
 		}
 		
 		System.out.println(List);
 
 	}
 
-	public static <T> ArrayList<String> Array(String name) {
-		List.add(name);
+	public static <T> ArrayList<Object> Array(Object x) { //Gör så att den kan ta in olika objekt
+		List.add(x);
 
 		return List;
 	}
