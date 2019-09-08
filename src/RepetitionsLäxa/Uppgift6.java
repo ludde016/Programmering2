@@ -13,9 +13,13 @@ public class Uppgift6 {
 		SaveWord(ord);
 		anagrams(ord);
 	}
-	
+	/**Metoden fungerar på så sätt att den flyttar fram den första bokstaven ett steg och sedan sparar den det nya ordet
+	 * ,detta gör den tills att bokstaven som var i början hamnar i slutet och då börjar den om tills den har bildar alla anagram.
+	 * 
+	 * @param ord
+	 * Detta är det ord som användaren har valt att skriva ut alla anagram av
+	 */
 	public static <T> void anagrams(String ord) {
-		// double iter = Math.pow(ord.length() - 1, 2); //Antalet iterrationer
 		char[] array = ord.toCharArray(); 
 		char save;
 		for (double i = 0; i < ord.length() - 1; i++) {
@@ -31,7 +35,13 @@ public class Uppgift6 {
 		
 		System.out.print(result);
 	}
-	
+	/**Metoden fungerar på sätt att den tar emot char-arrayen från förra metoden och bildar ett ord med alla dess bokstäver
+	 * 
+	 * @param array
+	 * Detta är den char-arrayen med alla bokstäver
+	 * @return
+	 * Metoden returnerar ordet som är ett anagram
+	 */
 	public static <T> String word(char[] array) { 
 		String anagram = "";
 		for (int i = 0; i < array.length; i++) {
@@ -39,7 +49,13 @@ public class Uppgift6 {
 		}
 		return anagram;
 	}
-	
+	/**Metoden fungerar på så sätt att den tar in varje anagram och sparar det i en arraylist
+	 * 
+	 * @param anagram
+	 * Detta är anagramet
+	 * @return
+	 * Den returnerar en arraylist med anagramen
+	 */
 	public static <T> ArrayList SaveWord(String anagram) {
 		result.add(anagram);
 		return result;
