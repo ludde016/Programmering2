@@ -25,5 +25,13 @@ public class Uppgift6 {
 		
 		return null;
 	}
+	
+	public static <T> String word(char[] array) { 
+		String anagram = "";
+		for (int i = 0; i < array.length; i++) {
+			ananagram = ananagram + array[i];
+		}
+		return ananagram;
+	}
 
 }
