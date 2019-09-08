@@ -10,7 +10,6 @@ public class Uppgift6 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		String ord = input.next();
-		SaveWord(ord);
 		anagrams(ord);
 	}
 	/**Metoden fungerar på så sätt att den flyttar fram den första bokstaven ett steg och sedan sparar den det nya ordet
@@ -22,7 +21,7 @@ public class Uppgift6 {
 	public static <T> void anagrams(String ord) {
 		char[] array = ord.toCharArray(); 
 		char save;
-		for (double i = 0; i < ord.length() - 1; i++) {
+		for (double i = 0; i < ord.length(); i++) {
 			for (int j = 0; j < ord.length() - 1; j++) {
 				save = array[j + 1];
 				array[j + 1] = array[j];
