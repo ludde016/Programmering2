@@ -7,7 +7,7 @@ public class Uppgift6 {
 	
 	static ArrayList<String> result = new ArrayList<String>();
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) { //Notera att metoden inte är rekursiv...
 		Scanner input = new Scanner(System.in);
 		String ord = input.next();
 		anagrams(ord);
