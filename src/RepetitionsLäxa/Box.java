@@ -4,21 +4,23 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Box {
-	static ArrayList<Object> Box1 = new ArrayList<Object>();
 
 	public static void main(String[] args) {
+		Object[] Box1 = {"Hej"};
+		Object[] Box2 = {1};
 
-		Scanner input = new Scanner(System.in);
-		while (true) {
-			Object x = input.next();
-			Storage(x);
-		}
+		System.out.print(Comperator(Box1, Box2));
 	}
-
-	public static <T> ArrayList<Object> Storage(Object x) {
-		Box1.add(x);
-
-		return Box1;
+	
+	public static <T> boolean Comperator(Object[] Box1, Object[] Box2) {
+		if (Box1[0].getClass() == (Box2[0].getClass())) {
+			
+			return true;
+		}
+		else {
+			return false;
+		}
+		
 	}
 
 }
