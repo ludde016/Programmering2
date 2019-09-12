@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class Uppgift6PåRiktigt {
 
 	static ArrayList<String> result = new ArrayList<String>();
-	static int index = 0;
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
@@ -22,10 +21,13 @@ public class Uppgift6PåRiktigt {
 			save = array[j + 1];
 			array[j + 1] = array[j];
 			array[j] = save;
+			SaveWord(word(array));
 
-			while (result.size() < 6) {
-				rekursiv(array);
-			}
+		}
+		if (result.size() < 6) {
+			rekursiv(array);
+		}
+		else {
 			System.out.println(result);
 		}
 	}
@@ -36,5 +38,13 @@ public class Uppgift6PåRiktigt {
 			anagram = anagram + array[i];
 		}
 		return anagram;
+	}
+	
+	public static <T> ArrayList SaveWord(String anagram) {
+		if (!result.contains(anagram)) { //denna kodsnutt behövs egentligen inte då inga "kopior" bildas
+		result.add(anagram);
+		}
+		return result;
+
 	}
 }
