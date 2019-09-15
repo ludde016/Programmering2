@@ -62,7 +62,7 @@ public class Uppgift6 {
 	 * arraylist
 	 * 
 	 * @param anagram
-	 *            Detta är anagramet
+	 * Detta är anagramet
 	 * @return Den returnerar en arraylist med anagramen
 	 */
 	public static <T> ArrayList SaveWord(String anagram) {
