@@ -6,7 +6,7 @@ public class Uppgift2 {
 	
 	static 	Scanner input = new Scanner(System.in);
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { //Inte rekursiv tyvärr...
 		while(true) {
 		String ordet = input.nextLine();
 		baklanges(ord(ordet));
