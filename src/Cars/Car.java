@@ -11,5 +11,9 @@ abstract class Car {
 	abstract void roll();
 	
 	abstract void speed();
+	
+	public static void KöriDiket() {
+		System.out.println("*Kör ner i diket*");
+	}
 
 }

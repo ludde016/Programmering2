@@ -12,6 +12,7 @@ public class Main {
 			car.roll();
 			car.speed();
 			car.consume();
+			car.KöriDiket();
 			
 		}
 	}
