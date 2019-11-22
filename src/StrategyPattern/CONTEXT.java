@@ -1,14 +1,14 @@
 package StrategyPattern;
 
 public class CONTEXT {
-	private StrategyInterface strategy;
+	private StrategyInterface _strategy;
 	
-	public CONTEXT(StrategyInterface _strategy) {
+	public CONTEXT(StrategyInterface strategy) {
 		_strategy = strategy; 
 	}
 	
 	public double executeStrategy(double num1, double num2) {
 		
-		return strategy.Calculate(num1, num2);
+		return _strategy.Calculate(num1, num2);
 	}
 }
