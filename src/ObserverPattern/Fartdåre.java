@@ -1,25 +1,31 @@
 package ObserverPattern;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Fartdåre {
 	
-	private String _hastighet;
+	private List<Police> Polices = new ArrayList<Police>();
+	private int _hastighet;
 	
-	public String getHastighet() {
+	public int getHastighet() {
 		return _hastighet; 
 	}
 	
-	public void setHastighet(String hastighet) {
+	public void setHastighet(int hastighet) {
 		this._hastighet = hastighet;
 		policeJakt();
 	}
 	
-	public void jaga(Observer police) {
-		police.add(police);
+	public void jaga(Police police) {
+		Polices.add(police);
 		
 	}
 	
 	public void policeJakt() {
-		observer.update();
+		for(Police police : Polices) {
+			police.update();
+		}
 	}
 
 }
